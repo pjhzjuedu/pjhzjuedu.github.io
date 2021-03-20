@@ -4,15 +4,87 @@
   <meta charset="utf-8">
   
   
-  <title>Hexo</title>
+  <title>码云 + Hexo 搭建个人博客 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://pythonbluebird.gitee.io/index.html">
+  <meta name="description" content="个人博客地址：http:&#x2F;&#x2F;zwd596257180.gitee.io&#x2F;blog准备环境安装 Node安装 Git注册码云安装 Hexonpm install hexo-cli -g出现下图表示安装成功：搭建本地个人博客初始化 hexo新建一个空白文件夹（下文提到的“项目根目录”是指你新建的文件夹的位置）用于存放 hexo 资源。在空白文件夹里面打开 Git ...">
+<meta property="og:type" content="article">
+<meta property="og:title" content="码云 + Hexo 搭建个人博客">
+<meta property="og:url" content="http://pythonbluebird.gitee.io/2019/06/05/%E7%A0%81%E4%BA%91%20+%20Hexo%20%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="个人博客地址：http:&#x2F;&#x2F;zwd596257180.gitee.io&#x2F;blog准备环境安装 Node安装 Git注册码云安装 Hexonpm install hexo-cli -g出现下图表示安装成功：搭建本地个人博客初始化 hexo新建一个空白文件夹（下文提到的“项目根目录”是指你新建的文件夹的位置）用于存放 hexo 资源。在空白文件夹里面打开 Git ...">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvOTMzYzc5OTI3OTdjMGYwZnMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvMjQ1NGQ5ODhiZGE1ZjAxZXMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvZWNjMjUwZDc3NDU5Mjg1YnMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvM2UwOWI0ZDE0YjI3OTM3MXMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvN2EwMzJlZDUyNzliZmVlMnMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvNTFlNDA1OWM1OTliYmQyZnMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvNTk2ZmM0YTY5OTc4YmVkNXMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvZTk1MTJhMzRkMGZmZGRhYXMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvNTc3MzViMzEwZGU0NGE1OXMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvYTE3YmJjYTc5MzY4MWRiZXMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvY2Y3ZjhiNzMxOGJhMTNhZXMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvODllOTFiYTE3NWJmYzVkN3MucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvZWM4YmYzNGQxNWZiNDQxZXMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvOGI3MmQxZTQ4MzlhNDU3ZnMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvMzIwNWM2NWMwMmUxZDAyY3MucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvM2MwYmNiNGUwMGI2OTY3NHMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvN2YxZGMzMzc1MDUxMDJjNnMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvN2M1MWU2MDlkZjllNWM0MnMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvZjkyZWU0NzNhOGM3MDFjZHMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvYTAxMzc2NjM3MjhlM2YwZnMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvYzhlZTE0OTJlNDNiNjI2YXMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvMGExNDQ2OGNlMGQ5MDFkOS5naWY">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvMjU0YTM3OGMzMjY3OGYzOXMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvODlkNDJhYTA1OTMxM2QyY3MucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvZGY5NjdlYTFjZDU2YTliM3MucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvM2QwMTAyZjY5MDU0ZjBlNnMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvMmQxYTMwYzMzMmY0ZmQ4OHMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvZGYxMGM4ZmI5ZGU3YjdiOHMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvYTAyMTVlZjFhZWUyZjZkOHMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvMTc1NWNlNDc1NzhmNjAxOXMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvOTYyYjkxZTcxYjcwMmFmYnMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvYzU2NzY3OTY1NzEzOWU2NHMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvOTlkZjY0NGE0MDgzZDRjOXMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvZjFkMTRkZDhlNTRjMzJmYnMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvYTFiZTk0MmFmNjQ4OTYyYXMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvYWViMGVlMTE4MDZhMTZjMnMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvYzRlNWU5NDVjM2ExYzBkNXMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvMDBmYzlkNTViMDc0ZDMyZXMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvOGIwOTVmN2M1OTI3MDdiYXMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvNTFiZmRhYmE1ZjM4NDFhMHMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvZGY5MjQ1NWI1MTA4MmQzOXMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvZTM1MjM2MDQ1M2I4MWI4M3MucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvZTlhYTRhOGM2OGYyMGQ3ZXMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvNWE5NzFmOTMxZThmYTNjOHMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvOWI5YTFkMWYwZDRmZmY3ZHMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvNDkwMmMxN2Q2ZTBiNzIxN3MucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvZThiMGViZGFiZThkOWY5YXMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvZGViZjdiODM5Zjg4ZGEzOHMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvNmNmNGI3YjE2ODE3YzVhOXMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvZDcwNjNlYjg1ZGQ0NjRiOHMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvMTA2OTMxYmYxYjE4YzJkOXMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvMDliZmQwMTNjYTUxZGUwOHMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvODc1NzYyNTc3MGIyMTNiMHMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvZTM5NWJhYmViOGI2ZTg0ZHMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvZDU5MzcwOWRlYmUxOTFlM3MucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvNDUwNmU2MTM0MGMwOWIzYXMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvNGZiOTNlOTVjNzg5OTZlOXMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvYzEzZDM1YjRmZTMzYjkwYnMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvNzQ5MDE3NDEwMGM3NWI2ZHMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvYjkwOGZmYTVhYmUzMThjN3MucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvMDk1NjkyZDRhYjVjMTIzZHMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvMTFhNGYwMjhkZTE2NTdiZXMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvMDg2MDBjNzAzNmFlZmY1MXMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvNDgyNjc0N2NmNGRjZTgwM3MucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvNTVlMmYzNGJlZTFmMWRhMXMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvNTljMTcxOTJiZDAxNjIyMnMucG5n?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvMDhjYWYxYTg1MjJhYmY5YXMucG5n?x-oss-process=image/format,png">
+<meta property="article:published_time" content="2019-06-05T00:37:00.000Z">
+<meta property="article:modified_time" content="2021-03-20T07:28:07.483Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://imgconvert.csdnimg.cn/aHR0cDovL3p3ZC55eXpoZW5nLmNuL2hleG9fbWFub25nX2Jsb2cvOTMzYzc5OTI3OTdjMGYwZnMucG5n?x-oss-process=image/format,png">
   
     <link rel="alternate" href="/blog/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -69,197 +141,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-【游记】2017 05.28~05.29 端午三门岛&amp;东西冲之旅" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/blog/2021/03/20/%E3%80%90%E6%B8%B8%E8%AE%B0%E3%80%912017%2005.28~05.29%20%E7%AB%AF%E5%8D%88%E4%B8%89%E9%97%A8%E5%B2%9B&%E4%B8%9C%E8%A5%BF%E5%86%B2%E4%B9%8B%E6%97%85/" class="article-date">
-  <time class="dt-published" datetime="2021-03-20T06:52:26.405Z" itemprop="datePublished">2021-03-20</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: 【游记】2017 05.28~05.29 端午三门岛&amp;东西冲之旅</span><br><span class="line">date: 2021-03-20 14:52:26</span><br><span class="line">tags:</span><br></pre></td></tr></table></figure>
-
-<h2 id="【游记】2017-05-28-05-29-端午三门岛-amp-东西冲之旅"><a href="#【游记】2017-05-28-05-29-端午三门岛-amp-东西冲之旅" class="headerlink" title="【游记】2017 05.28~05.29 端午三门岛&amp;东西冲之旅"></a>【游记】2017 05.28~05.29 端午三门岛&amp;东西冲之旅</h2><p>猎人 <a href="javascript:void(0);">大山社群</a> <em>2020-04-21</em></p>
-<p><strong>第一次海岛游，第一次坐大飞。活动组织的很坎坷，预设两个方案，人不齐自驾(三门岛，杨梅坑，较场尾，大鹏所城），人多就包车东西冲。起初计划的是三天行程，又考虑大家都是初次接触海岛游，钓竿，潜水器具，腐败装备都不齐全，加上端午又易塞车，所以定为两天。先熟悉一下，以后再找个海岛玩个痛快！</strong></p>
-<p><strong>露宿三门岛，听浪花梳理细沙</strong></p>
-<p><img src="assets/640.webp" alt="img">    05.27早上八点，客村B口小黄车旁，围着一群背包男女。大家素昧平生，初次见面都比较腼腆，微笑中略带些许羞涩，因为一个约定，未来两天将在荒岛共同生活。赤激咧！</p>
-<p><img src="assets/640.webp" alt="img"></p>
-<p>​     司机不打招呼直接拖上家人去东西冲，原来一直问有多少人，是在这里等着呢，套路深！或许是占了便宜吧，一路上态度比较客气，老实说还没遇到几个脾气好的司机。但车开得真是慢，能开100的也开80，本来按正常速度我们不会塞车的。</p>
-<p>​     中午12点才到南澳，大家下车午餐，休息。</p>
-<p>​     从市场采购了水果，饮料，海鲜，烧烤食材，又加了点蛋、米、面粉、绿豆。想着烧烤不够吃，还可以煎饼、 糖水、 粥  ，总之不能饿着。约莫1点集合去东冲</p>
-<p><img src="assets/640.webp" alt="img"></p>
-<p><img src="assets/640.webp" alt="img"></p>
-<p>​     往东冲是一条羊肠小道，里程不长却耗时。一路有很多卖窑鸡的，起先以为窑鸡的香味飘进车厢，后来发现是包里的酱油洒了。蜿蜒曲折终于来到东冲沙滩，下车去买大飞船票450RMB/条（过夜），微信转账加收5RMB/条，略黑！</p>
-<p>​     工作人员领着我们穿过窄巷，来到码头。807，808，818三条大飞船主，在我们强烈要求之下，撑开了遮阳蓬，六人一船，踏浪出发。（哥哥你们只图省事，可考虑人家被太阳暴晒？）不管怎样，第一次坐大飞，还是狠激动的，喜悦之情溢于言表。</p>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/ZicwmP9nRO4hsU4iaYEZrvWXQSS7lXU1Vw9K9pRvFYu5wCv6lGLKUtr8Whvra1mgMpMsZBWZzwEdsUP9vf6V6BBQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
-<p><img src="assets/640-1616223621731.webp" alt="img"></p>
-<p>学习往返都拍了很长的视频，可是方向都有点问题，找了很多剪辑软件，都搞不定。</p>
-<p>​     抵达北扣码头，沿路进三门岛（收10RMB/人的上岛费），先去白沙滩报到。到时已然人满为患，好营地都被占了，我们只好在垃圾堆旁边扎营。</p>
-<p>​     这里海水清澈，物种丰富，可配套设施不全，上厕所2RMB/人，冲凉10RMB/人（冷水），热水加多5RMB/人。如果你有预定岛上的餐馆，店家会免费提供淡水和洗手间。</p>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/ZicwmP9nRO4hsU4iaYEZrvWXQSS7lXU1Vw9K9pRvFYu5wCv6lGLKUtr8Whvra1mgMpMsZBWZzwEdsUP9vf6V6BBQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
-<p><img src="assets/640-1616223621733.webp" alt="img"></p>
-<p>​     扎完营算是松了一气，终于可以到处浪了，有人下海，有人纳凉，我们沿着岛上唯一的公路入内岛探秘，开始人还比较多，渐渐的就剩五六七八个…</p>
-<p><img src="assets/640-1616223621744.webp" alt="img"></p>
-<p>​     三门岛小学，教室依正门对称排开，浓浓的文革风，现在稍微整理一下也是可以用的</p>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/ZicwmP9nRO4hsU4iaYEZrvWXQSS7lXU1Vw9K9pRvFYu5wCv6lGLKUtr8Whvra1mgMpMsZBWZzwEdsUP9vf6V6BBQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
-<p><img src="assets/640-1616223621750.webp" alt="img"></p>
-<p>​     在相思湖大坝下面有个鹿场，圈养着三头梅花鹿，其中一个已经开始长角。</p>
-<p>​      内岛有许多别墅，半山酒店，望海泳池，虽说是烂尾，但都已经初具规模，就差一点收尾装修的工作。攻略上的防空洞，日军碉堡，海誓山盟峰，我们都有路过，一般般而已，不怎么撩人。</p>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/ZicwmP9nRO4hsU4iaYEZrvWXQSS7lXU1Vw9K9pRvFYu5wCv6lGLKUtr8Whvra1mgMpMsZBWZzwEdsUP9vf6V6BBQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
-<p><img src="assets/640-1616223621760.webp" alt="img"></p>
-<p>​     天热，登顶后在某阴凉处，一行人席地而卧，一展疲惫的身躯！</p>
-<p>​     歇够了，下山！再次经过相思湖，想进烂尾的度假村看看，走到湖面平台时，恰巧被一个看护发现了，喝令我们出去，开始距离那么远怕什么?就继续走，谁知道人家是有摩托的，呼呼麦就到了，哈哈… 不得不怂 ，还是退了回去。</p>
-<p>​      沿原路返回，路上一直有辆电瓶车往返接送游客，但是又不主动揽客，稀奇了。当时没想明白，现在想想可能是三门岛酒店的电瓶车，只送酒店的人上去观光，所以不睬路人。毕竟七八百一晚的酒店呀，这点逼格还是要有的！</p>
-<p><img src="assets/640-1616223621767.webp" alt="img"></p>
-<p>​     天色渐晚，重头戏要出场了！</p>
-<p>​     锌神，蓝天白云，饶沐杰把物资从沙滩提到烧烤档。然后大家帮忙洗菜、剁蒜蓉。doesnt想帮忙洗菜的，可都被勤劳的小伙伴干完了，只剩下秋刀鱼，开始他是拒绝的，不想沾腥，后来还是接受了，9条鱼全部开膛剖肚。</p>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/ZicwmP9nRO4hsU4iaYEZrvWXQSS7lXU1Vw9K9pRvFYu5wCv6lGLKUtr8Whvra1mgMpMsZBWZzwEdsUP9vf6V6BBQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
-<p><img src="assets/640-1616223621771.webp" alt="img"></p>
-<p>​     四方餐馆，老板老林，他儿子小林在蚂蜂窝上发了一份三门岛攻略，起初以为是游客，到了地方真相了，原来就是黄婆卖瓜，好多游客都是冲着攻略来的，我们也不例外。</p>
-<p>​    弄得差不多，就喊小林来生炭，咋就用俺们的食用油生火呢？本来油就不多o(╯□╰)o。大家好斯文，烤肉全用锡纸隔着，起初的羊肉串多半都夹生。</p>
-<p><img src="assets/640-1616223621775.webp" alt="img"></p>
-<p>​     看见海鲜就伤心，一袋花螺上岛后就扔在太阳底下，都晒死了，晚上烧烤的时候有点异味，全丢了。啊… 60大洋啊 ！生蚝很赞，熟了自己会裂开（射doesnt一脸），然后上蒜蓉，剁椒放一两粒就很够味了。</p>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/ZicwmP9nRO4hsU4iaYEZrvWXQSS7lXU1Vw9K9pRvFYu5wCv6lGLKUtr8Whvra1mgMpMsZBWZzwEdsUP9vf6V6BBQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
-<p><img src="assets/640-1616223621783.webp" alt="img"></p>
-<p>​     吃到八九点，遇到一围东北人，捡了很多海胆。黄丹见他们老过来瞅，就打起了火锅丸子换海胆的注意，简直一拍即合好不好，各取所需超开心的！说黄丹，还让档主帮忙煮了鸡蛋，差点就让老板给我们打折（是我没好意思开口），黄丹黄丹，真是户外旅行的必备佳品，hhh…  夜深炭灭，收拾了一下腐败现场，散去…</p>
-<p><img src="assets/640-1616223621789.webp" alt="img"></p>
-<p>​     后半场，有帐篷里面打牌的，有沙滩跳舞的，有偷偷放孔明灯的，哈哈，就是学习啦！悲催的是放了6个，只上去了一个，其它不是风大撕破了，就是挂树枝上慢慢等死。</p>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/ZicwmP9nRO4hsU4iaYEZrvWXQSS7lXU1Vw9K9pRvFYu5wCv6lGLKUtr8Whvra1mgMpMsZBWZzwEdsUP9vf6V6BBQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
-<p><img src="assets/640-1616223621792.webp" alt="img"></p>
-<p>​     有梁源就不愁没自拍，咦？怎么是Darren？？？</p>
-<p><img src="assets/640-1616223621797.webp" alt="img"></p>
-<p>​     海浪中入眠，晨曦中清醒，不慌不忙地度日，甚是满足（学习）.jpg</p>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/ZicwmP9nRO4hsU4iaYEZrvWXQSS7lXU1Vw9K9pRvFYu5wCv6lGLKUtr8Whvra1mgMpMsZBWZzwEdsUP9vf6V6BBQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
-<p><img src="assets/640-1616223621805.webp" alt="img"></p>
-<p>​     海岛再好终须别，临别怎能没插曲？</p>
-<p>​     等大飞来的途中，有小伙伴去上洗手间，回来得比较迟。船主厉声喝道：再唔来，黎D等下一班啦。开始还真怕他走，后来越来越横，平生最讨厌被要挟的口气了，我不客气地怼回：你返去咯。他不吭声了，哎… 难道就不能好好说话吗？</p>
-<p><img src="assets/640-1616223621812.webp" alt="img"></p>
-<p>​     临别前大合照，一行十八人，在三门岛码头留影纪念！</p>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/ZicwmP9nRO4hsU4iaYEZrvWXQSS7lXU1Vw9K9pRvFYu5wCv6lGLKUtr8Whvra1mgMpMsZBWZzwEdsUP9vf6V6BBQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
-<p><img src="assets/640-1616223621821.webp" alt="img"></p>
-<p><img src="assets/640-1616223621825.webp" alt="img"></p>
-<p><strong>东西冲不是第一次来了，上次是从西冲穿越至东冲，只记得那次小雨，海水浑浊，天色雾蒙蒙，能见度低。这次遇到了好天气，水清澈，天蔚蓝，终于见到了中国十大最美徒步线路之东西冲的本来面目</strong></p>
-<p><strong>穿越东西冲，沿海岸徒步观海</strong></p>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/icHFcic8F8t7EpBa09BQwfXsR41q2libxEciarT7bEFZRylbmjyH0qBOtY1S2RVMZDc6DiaX3pF6yUZDpE57FmicELiaA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
-<p>​     可能端午人多，凡入山，须登记相关的信息，比如多少人，走什么路线等等。有种签生死状的既视感！</p>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/ZicwmP9nRO4hsU4iaYEZrvWXQSS7lXU1Vw9K9pRvFYu5wCv6lGLKUtr8Whvra1mgMpMsZBWZzwEdsUP9vf6V6BBQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
-<p><img src="assets/640-1616223621845.webp" alt="img"></p>
-<p>​     走过一段机耕路，终于见到海，同伴们掩饰不住内心的激动，拿出手机不停地拍拍拍，今天的海景确实美，张张都是大片。</p>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/ZicwmP9nRO4hsU4iaYEZrvWXQSS7lXU1Vw9K9pRvFYu5wCv6lGLKUtr8Whvra1mgMpMsZBWZzwEdsUP9vf6V6BBQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
-<p><img src="assets/640-1616223621853.webp" alt="img"></p>
-<p>​     由此也开始今天的下山入海之行，前途狭关险道，每走一步都需要小心加小心，稍有不慎，就会扑街。</p>
-<p><img src="assets/640-1616223621859.webp" alt="img"></p>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/ZicwmP9nRO4hsU4iaYEZrvWXQSS7lXU1Vw4qzV9SEMgLKBoQyPWq2jvqLR3S6XycRzickvHdNeEMKKl4NmEnhiaiciaA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
-<p>​     炎热的天气，令人无暇它顾，只想着早点走完。回看当时，怎么没混在人堆里留张帅帅的背影呢~</p>
-<p><img src="assets/640-1616223621864.webp" alt="img"></p>
-<p>​      无数次的垂直翻越，我们都能化险为夷或者说不惊不慌，都是因为这些刚链子，着实帮了大忙，在享受徒步乐趣的同时，又少了很多危险！</p>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/ZicwmP9nRO4hsU4iaYEZrvWXQSS7lXU1Vw9K9pRvFYu5wCv6lGLKUtr8Whvra1mgMpMsZBWZzwEdsUP9vf6V6BBQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
-<p><img src="assets/640-1616223621871.webp" alt="img"></p>
-<p>​    这是途中最陡的一个坡，没有防护，也没有绳索</p>
-<p>​     能在石崖里寻一处清凉，是多么幸福的一件事！</p>
-<p><img src="assets/640-1616223621876.webp" alt="img"></p>
-<p>​     艇家看我们人多，便过来揽客，超低的价格诱惑，但终点就在眼前，我们岂能为之所动？</p>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/ZicwmP9nRO4hsU4iaYEZrvWXQSS7lXU1Vw9K9pRvFYu5wCv6lGLKUtr8Whvra1mgMpMsZBWZzwEdsUP9vf6V6BBQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
-<p><img src="assets/640-1616223621880.webp" alt="img"></p>
-<p>​     临近此行终点，合影纪念一下！好有心❤</p>
-<p><img src="assets/640-1616223621884.webp" alt="img"></p>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/ZicwmP9nRO4hsU4iaYEZrvWXQSS7lXU1Vw4qzV9SEMgLKBoQyPWq2jvqLR3S6XycRzickvHdNeEMKKl4NmEnhiaiciaA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
-<p><strong>知道这次要塞车，但没想到会塞这么久，光南澳走了3个小时</strong></p>
-<p><strong>拥堵的路上K歌而回。欢乐和阳光一样热烈～</strong></p>
-<p><img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" alt="img"></p>
-<p>​     终于走出南澳，只见对面高架上，成排的车还向南澳驶去。</p>
-<p>​     “咦，怎么都不动了”</p>
-<p>​     “是啊，你看路边都是人”</p>
-<p>​     “哈哈，他们有没有带帐篷，也许可以在高架上扎个营”</p>
-<p><img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" alt="img"></p>
-<p><img src="assets/640-1616223621890.webp" alt="img"></p>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/ZicwmP9nRO4hsU4iaYEZrvWXQSS7lXU1Vw4qzV9SEMgLKBoQyPWq2jvqLR3S6XycRzickvHdNeEMKKl4NmEnhiaiciaA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img">    </p>
-<p>​     塞车，大家一觉醒来，想搞点事情！于是锌神和饶沐杰在车尾唱了起来，配上小音箱，气氛一下子就带动了起来，后来大家都嗨到一起，一路上K歌回到了广州。</p>
-<p><strong>文末特别感谢：</strong></p>
-<p><strong>华南师范大学国防协会，为此次活动提供帐篷，感谢汉彬的帮助！</strong></p>
-<p><img src="assets/640.gif" alt="img"></p>
-<p>有人说，有些人二十几岁就死了，只是八十岁才埋。</p>
-<p>猎人在路上 - 原创</p>
-<p>Instagram - @Samlee2285</p>
-<p>email - <a href="mailto:kindhuntter@qq.com">kindhuntter@qq.com</a></p>
-<p><img src="assets/640-1616223621901.webp" alt="img"></p>
-<p>WeChat ID - kindhuntter</p>
-<p><strong>旅行摄影登山徒步极限运动</strong></p>
-<p><strong><strong>探索的心永不停止</strong></strong></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://pythonbluebird.gitee.io/2021/03/20/%E3%80%90%E6%B8%B8%E8%AE%B0%E3%80%912017%2005.28~05.29%20%E7%AB%AF%E5%8D%88%E4%B8%89%E9%97%A8%E5%B2%9B&%E4%B8%9C%E8%A5%BF%E5%86%B2%E4%B9%8B%E6%97%85/" data-id="ckmhfpdae0000h0vq0nunhaxd" data-title="" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/blog/2021/03/20/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2021-03-20T06:49:50.633Z" itemprop="datePublished">2021-03-20</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/blog/2021/03/20/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://pythonbluebird.gitee.io/2021/03/20/hello-world/" data-id="ckmhdh3z70000dovq1s1e5fuq" data-title="Hello World" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-码云 + Hexo 搭建个人博客" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-码云 + Hexo 搭建个人博客" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/blog/2019/06/05/%E7%A0%81%E4%BA%91%20+%20Hexo%20%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="article-date">
   <time class="dt-published" datetime="2019-06-05T00:37:00.000Z" itemprop="datePublished">2019-06-05</time>
@@ -646,11 +528,23 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
+  
+    <a href="/blog/2021/03/20/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+</nav>
 
   
+</article>
 
 
 </section>
